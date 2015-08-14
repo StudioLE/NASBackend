@@ -38,9 +38,5 @@ function slug_register_starship() {
  * @return mixed
  */
 function slug_get_starship( $object, $field_name, $request ) {
-    //return get_post_meta( $object[ 'id' ], $field_name, true );
-    // var_dump($object);
-    // exit;
-    // return get_the_post_thumbnail( $object[ 'id' ], 'post-thumbnail');
     return wp_get_attachment_image_src( $object[ 'featured_image' ], 'poster');
 }
